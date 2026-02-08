@@ -1,0 +1,368 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pranav Vedula | Student</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">   
+        <!-- Using a stable version of FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+        <!-- Link to external CSS -->
+        <link rel="stylesheet" href="style.css">
+        
+        <style>
+            /* Custom overrides for specific user requests */
+            
+            /* 1. Make Certifications one line (4 columns) on desktop */
+            @media (min-width: 1024px) {
+                .cert-row {
+                    grid-template-columns: repeat(4, 1fr) !important;
+                }
+            }
+
+            /* 2. Align Icon and Text side-by-side for Skills */
+            .skill-header {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 20px;
+            }
+            /* Remove default margins so they align perfectly */
+            .skill-header i {
+                margin-bottom: 0 !important;
+            }
+            .skill-header h3 {
+                margin-bottom: 0 !important;
+            }
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="#home" class="logo">PV<span class="dot">.</span></a>
+                
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="btn-nav">Contact</a></li>
+                </ul>
+
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            
+            <section id="home" class="section hero">
+                <div class="container hero-container">
+                    <div class="hero-text"> 
+                        <div class="badge">Engineering Student</div>
+                        
+                        <h1 class="hacker-text" data-value="Pranav Vedula">Pranav Vedula</h1>
+                        <p class="tagline">Aspiring Computer Science Professional</p>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="image-wrapper">
+                            <img src="https://media.licdn.com/dms/image/v2/D4E03AQFmFeX1RRty_A/profile-displayphoto-scale_400_400/B4EZnWRQ1mK0Ag-/0/1760236478280?e=1772064000&v=beta&t=MJCrifJUb6tP-RV65HCqzGLuDvc_SCHI8K2d4S0TMVk" alt="Pranav Vedula" class="hero-img" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="glow-bg"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>About Me</h2>
+                    </div>
+                    <div class="about-text-content">
+                        <p>
+                        Aspiring <span class="highlight">Computer Science</span> professional and 
+                        <span class="highlight">second-year Engineering student</span> with global certifications in 
+                        <span class="highlight">Microsoft Excel</span> and 
+                        <span class="highlight">Microsoft Power Platform</span>.
+                        <br><br>
+
+                        Strong skills on  
+                        <span class="highlight">C</span>, 
+                        <span class="highlight">C++</span>, 
+                        <span class="highlight">Java</span>, 
+                        <span class="highlight">Python</span>, and 
+                        <span class="highlight">Data Structures & Algorithms (DSA)</span>.
+                        <br><br>
+
+                        Proficient in 
+                        <span class="highlight">Oracle Database</span>, 
+                        <span class="highlight">Oracle SQL</span>, 
+                        <span class="highlight">MySQL</span>, and 
+                        <span class="highlight">PL/SQL</span>, with experience in 
+                        <span class="highlight">Agile Software Engineering</span> and 
+                        <span class="highlight">Object-Oriented Programming</span>.
+                        <br><br>
+
+                        Experienced in 
+                        <span class="highlight">Web Development</span> and 
+                        <span class="highlight">MERN Stack</span> 
+                        (MongoDB, Express.js, React.js, Node.js), 
+                        <span class="highlight">Java Swing</span>, and frontend technologies 
+                        (<span class="highlight">HTML</span>, 
+                        <span class="highlight">CSS</span>, 
+                        <span class="highlight">JavaScript</span>).
+                        <br><br>
+
+                        Familiar with <span class="highlight">Microsoft Power BI</span> (Basics) for data visualization and analysis.
+                        Seeking opportunities to apply technical and analytical skills, learn from industry professionals,
+                        and contribute to impactful real-world solutions.
+                        </p>
+
+                        <div class="cta-group">
+                            <a href="#projects" class="btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                            <a href="Pranav Vedula Resume ATS.pdf" class="btn-secondary"><i class="fas fa-download"></i> Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Technical Skills</h2>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="fas fa-terminal"></i>
+                                <h3>Coding Languages</h3>
+                            </div>
+                            <p>C, C++, Java, Python, DSA</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="fas fa-globe"></i>
+                                <h3>Web</h3>
+                            </div>
+                            <p>HTML, CSS, JavaScript, MERN Technologies</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="fas fa-database"></i>
+                                <h3>DataBase</h3>
+                            </div>
+                            <p>Oracle SQL, PL/SQL, MySQL, MongoDB</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="fab fa-linux"></i>
+                                <h3>Operating Systems</h3>
+                            </div>
+                            <p>Windows, Linux , OS , RedHat</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <i class="fas fa-chart-bar"></i>
+                                <h3>Tools</h3>
+                            </div>
+                            <p>Power BI, Excel, GitHub</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section bg-dim">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Academic Projects</h2>
+                    </div>
+
+                    <div class="projects-grid">
+                        
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon-box"><i class="fas fa-qrcode"></i></div>
+                                    <h3>Attendance Scanner</h3>
+                                    <span class="tech-tag">Web Page</span>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Attendance Scanner</h3>
+                                    <p>Automated QR-based roll-call system. Scans ID cards and exports real-time logs to Excel.</p>
+                                    <!-- FIXED: Added span around the CSS icon -->
+                                    <div class="stack"><span><i class="fab fa-html5"></i></span><span><i class="fab fa-js"></i></span><span><i class="fab fa-css3-alt"></i></span></div>
+                                    <a href="https://pranavv-07.github.io/attendance-scanner/" class="btn-link" target="_blank">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon-box"><i class="fas fa-hospital-user"></i></div>
+                                    <h3>Hospital Management System</h3>
+                                    <span class="tech-tag">C++ Console</span>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Hospital Management System</h3>
+                                    <p>Secure management system with Admin, Doctor, and Patient modules using OOPs & STL.</p>
+                                    <div class="stack"><span>C++</span><span>OOP</span></div>
+                                    <a href="https://github.com/Pranavv-07/Hospital_Management_System_Cpp" class="btn-link" target="_blank">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                                    <h3>Sales Dashboard</h3>
+                                    <span class="tech-tag">Analytics</span>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Sales Dashboard</h3>
+                                    <p>Interactive Power BI dashboard for analyzing sales trends and KPIs with dynamic filters.</p>
+                                    <div class="stack"><span>Power BI</span><span>DAX</span></div>
+                                    <a href="https://github.com/Pranavv-07/Sales-Dashboard-PowerBi-Excel" class="btn-link" target="_blank">View Analysis</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- certifications -->
+            <section id="certifications" class="section bg-dim">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Certifications</h2>
+                    </div>
+
+                    <!-- Added custom class 'cert-row' to handle 4-column layout -->
+                    <div class="projects-grid cert-row">
+                        
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon-box"><i class="fas fa-file-excel"></i></div>
+                                    <h3>Microsoft Office Specialist</h3>
+                                    <span class="tech-tag">Excel Associate 2019</span>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Microsoft office specialist excel associate</h3>
+                                    <p>Certification in Microsoft Office Specialist Excel Associate.</p>
+                                    <div class="stack"><span>Excel</span><span>Data Analysis</span></div>
+                                    <a href="https://www.credly.com/badges/8a645474-2b93-48dc-9cc7-fe0eaee3dc48/public_url" target="_blank" class="btn-link">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                                    <h3>Microsoft Power Platform</h3>
+                                    <span class="tech-tag">Fundamentals</span>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Microsoft Power Platform Fundamentals</h3>
+                                    <p>Certification in Microsoft Power Platform Fundamentals.</p>
+                                    <div class="stack"><span>Power BI</span><span>Power Apps</span></div>
+                                    <a href="https://www.credly.com/badges/9fd7b9c9-e2bf-44c6-9c3e-adda20dbdf13/public_url" class="btn-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- HR -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon-box"><i class="fas fa-code"></i></div>
+                                    <h3>Hackerrank Problem Solving</h3>
+                                    <span class="tech-tag">Problem Solving</span>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Hackerrank Problem Solving</h3>
+                                    <p>Certification in Hackerrank Problem Solving.</p>
+                                    <div class="stack"><span>Problem Solving</span><span>Algorithms</span></div>
+                                    <a href="https://www.hackerrank.com/certificates/iframe/a4a6a9f0c9e7" class="btn-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="icon-box"><i class="fas fa-database"></i></div>
+                                    <h3>Hackerrank SQL</h3>
+                                    <span class="tech-tag">SQL</span>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Hackerrank SQL</h3>
+                                    <p>Certification in Hackerrank SQL.</p>
+                                    <div class="stack"><span>Oracle SQL</span><span>Database</span></div>
+                                    <a href="https://www.hackerrank.com/certificates/iframe/3641ccc83839" class="btn-link" target="_blank">View Certificate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="contact" class="section footer">
+                <div class="container">
+                    <div class="footer-split">
+                        <!-- Left Side -->
+                        <div class="footer-column">
+                            <h2>Coding Profiles</h2>
+                            <div class="social-links">
+                                <a href="https://leetcode.com/u/Pranav_Vedula/" target="_blank">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+                                        alt="LeetCode"
+                                        class="icon leetcode">
+                                </a>
+                                <a href="https://www.codechef.com/users/ranav_vedula" target="_blank">
+                                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/codechef.svg"
+                                        alt="CodeChef"
+                                        class="icon leetcode"/>
+                                </a>
+                                <a href="https://www.hackerrank.com/vedulapranav" target="_blank">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png"
+                                        alt="HackerRank"
+                                        class="icon leetcode"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Right Side -->
+                        <div class="footer-column">
+                            <h2>Want to connect?</h2>
+                            <div class="social-links">
+                                <a href="tel:+91 8179344043"><i class="fas fa-phone"></i></a>
+                                <a href="mailto:vedulapranav@gmail.com"><i class="fas fa-envelope"></i></a>
+                                <a href="https://github.com/Pranavv-07"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/pranav-vedula-469b55322/"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="copyright">&copy;<span id="year"></span> Pranav Vedula. All rights reserved.</p>
+                </div>
+            </footer>
+
+        </main>
+
+        <!-- Link to external JS -->
+        <script src="script.js"></script>
+    </body>
+    </html> 
